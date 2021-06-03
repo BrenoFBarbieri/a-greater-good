@@ -1,3 +1,4 @@
+// import React, { useEffect, useState } from "react";
 import {
   Container,
   ContainerLogo,
@@ -5,14 +6,23 @@ import {
   Content,
 } from "./styles.js";
 
-export default function Header() {
+export default function Header(props) {
+  const { setIdScreen } = props;
+
+  const handleOptionsClick = (id) => {
+    setIdScreen(id);
+  };
+
   return (
     <Container>
       <Content>
-        <ContainerLogo>My app</ContainerLogo>
+        <ContainerLogo onClick={() => handleOptionsClick(0)}>
+          My app
+        </ContainerLogo>
+
         <ContainerOptions>
-          <a href="#">Início</a>
-          <a href="#about">Sobre</a>
+          <span onClick={() => handleOptionsClick(0)}>Início</span>
+          <span onClick={() => handleOptionsClick(1)}>Sobre</span>
         </ContainerOptions>
       </Content>
     </Container>

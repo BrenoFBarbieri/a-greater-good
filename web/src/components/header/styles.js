@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     
     background-color: #fff;
+    border-bottom: 0.5px solid #000;
 `;
 
 export const Content = styled.div`
@@ -29,24 +30,25 @@ export const ContainerLogo = styled.div`
     
     font-size: 1.2rem;
     font-weight: bold;
-    color: #a9a9a9;
+    color: #ff3b3f;
 
     cursor: pointer;
 
     :hover {
-        color: #ff3b3f;
+        color: #a9a9a9;
     }
 `;
 
 export const ContainerOptions = styled.div`
-    a {
+    span {
         font-size: 1.2rem;
         font-weight: bold;
         color: #a9a9a9;
         margin-left: 30px;
         text-decoration: none;
+        cursor: pointer;
     }
-    a:hover {
+    span:hover {
         color: #ff3b3f;
     }
 `;

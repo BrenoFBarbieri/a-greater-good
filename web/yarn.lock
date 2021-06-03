@@ -9064,6 +9064,16 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-is@0.0.0-a8964649b:
+  version "0.0.0-a8964649b"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-0.0.0-a8964649b.tgz#9b3a6b45ba4bbfcf694cd335ca8ed645485a76bc"
+  integrity sha512-hnNiCAnZYImgLCxbXYvlJGmrpvA4E04p9rHcOU3QVoCWEwHR6bel3Fg/YPpqK+O2d6fQuX+xrLgLzb77SIAryg==
+
+"react-is@^16.12.0 || ^17.0.0":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
+  integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -9144,6 +9154,24 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-shallow-renderer@^16.13.1:
+  version "16.14.1"
+  resolved "https://registry.yarnpkg.com/react-shallow-renderer/-/react-shallow-renderer-16.14.1.tgz#bf0d02df8a519a558fd9b8215442efa5c840e124"
+  integrity sha512-rkIMcQi01/+kxiTE9D3fdS959U1g7gs+/rborw++42m1O9FAQiNI/UNRZExVUoAOprn4umcXf+pFRou8i4zuBg==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "^16.12.0 || ^17.0.0"
+
+react-test-renderer@^0.0.0-a8964649b:
+  version "0.0.0-a8964649b"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-0.0.0-a8964649b.tgz#c40c63ec1d3557ff59efbd8a9487d9251e5f4b4c"
+  integrity sha512-eyVrNON+Cnss56Mg1TUJhWJEf/oo99h4kgAuyAKBNBsjtTIGRV4x4h37ib9YfrXL+sDkmZtmwlBVeBh/bmwMYQ==
+  dependencies:
+    object-assign "^4.1.1"
+    react-is "0.0.0-a8964649b"
+    react-shallow-renderer "^16.13.1"
+    scheduler "0.0.0-a8964649b"
 
 react@^17.0.2:
   version "17.0.2"
@@ -9658,6 +9686,14 @@ saxes@^5.0.0:
   integrity sha512-5LBh1Tls8c9xgGjw3QrMwETmTMVk0oFgvrFSvWx62llR2hcEInrKNZ2GZCCuuy2lvWrdl5jhbpeqc5hRYKFOcw==
   dependencies:
     xmlchars "^2.2.0"
+
+scheduler@0.0.0-a8964649b:
+  version "0.0.0-a8964649b"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.0.0-a8964649b.tgz#a5af78e4e7eb5d655d7f31341bd2cc6e4b1cc622"
+  integrity sha512-KeWIq0JagBsLNQ7Q3OyRvLILgeBMMEOxl8mDVB3tgvPv1N+SmoJiabrm0d3bOCOTQIH00zo/+NTNz87Q6rcapg==
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
 
 scheduler@^0.20.2:
   version "0.20.2"

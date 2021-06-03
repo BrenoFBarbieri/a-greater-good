@@ -6,6 +6,8 @@ export const Container = styled.div`
 
     margin-bottom: 10px;
 
+    border-radius: 10px;
+
     position: relative;
     overflow: hidden;
 `;
@@ -81,22 +83,22 @@ export const ContainerRef = styled.div`
     margin-top: 5px;
 `;
 
-export const Button = styled.button`
-    margin-top: 20px;
-    padding: 20px 30px;
+export const Button = styled.a`
+    margin-top: 35px;
+    /* padding: 20px 30px; */
     border: none;
     border-radius: 8px;
 
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
-    color: #fff;
+    color: #ff3b3f;
 
-    background-color: #a9a9a9;
+    background-color: none;
 
     cursor: pointer;
 
     :hover {
-        color: #ff3b3f;
+        color: #000;
     }
 `;
