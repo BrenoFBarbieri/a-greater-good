@@ -8,8 +8,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     
-    background-color: #fff;
-    border-bottom: 0.5px solid #000;
+    background-color: #fdfffc;
+    border-bottom: 0.5px solid #011627;
 `;
 
 export const Content = styled.div`
@@ -28,27 +28,28 @@ export const ContainerLogo = styled.div`
     justify-content: center;
     align-items: center;
     
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ff3b3f;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #011627;
 
     cursor: pointer;
 
     :hover {
-        color: #a9a9a9;
+        color: #ff9f1c;
     }
 `;
 
 export const ContainerOptions = styled.div`
     span {
         font-size: 1.2rem;
-        font-weight: bold;
-        color: #a9a9a9;
-        margin-left: 30px;
+        font-weight: 400;
+        color: #011627;
+        margin-left: 20px;
         text-decoration: none;
+        font-style: normal;
         cursor: pointer;
     }
     span:hover {
-        color: #ff3b3f;
+        color: #ff9f1c;
     }
 `;

@@ -7,17 +7,18 @@ import {
 } from "./styles.js";
 
 export default function Header(props) {
-  const { setIdScreen } = props;
+  const { setIdScreen, setModal } = props;
 
   const handleOptionsClick = (id) => {
     setIdScreen(id);
+    setModal(false);
   };
 
   return (
     <Container>
       <Content>
         <ContainerLogo onClick={() => handleOptionsClick(0)}>
-          My app
+          Try Love
         </ContainerLogo>
 
         <ContainerOptions>
